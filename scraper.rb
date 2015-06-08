@@ -6,10 +6,10 @@ require 'nokogiri'
 require 'date'
 require 'open-uri'
 
-require 'colorize'
-require 'pry'
-require 'open-uri/cached'
-OpenURI::Cache.cache_path = '.cache'
+# require 'colorize'
+# require 'pry'
+# require 'open-uri/cached'
+# OpenURI::Cache.cache_path = '.cache'
 
 def noko_for(url)
   Nokogiri::HTML(open(url).read) 
@@ -35,9 +35,8 @@ def scrape_mp(page)
  noko = noko_for(page)
  profile = noko.css('table.profile_tbl')
 
- binding.pry
  data = { 
-   # id: '2010-' + tds[0].text.strip,
+   id: page.to_s[/uid=(\d+)/, 1],
    name: cell(profile, "Name"),
    patronymic_name: cell(profile, "Father"),
    address: cell(profile, "Permanent Address"),
@@ -46,13 +45,13 @@ def scrape_mp(page)
    province: cell(profile, "Province"),
    party: cell(profile, "Party"),
    start_date: datefrom(cell(profile, "Oath Taking Date")),
-   # image: profile.css('img/@src').text,
+   image: profile.css('img/@src'),
    term: 14,
-   source: page,
+   source: page.to_s,
  }
  data[:party_id] = data[:party].gsub(/\W+/,'').downcase
- puts data[:party_id] + "|" + data[:party]
- # ScraperWiki.save_sqlite([:id, :term], data)
+ data[:image] &&= URI.join(page, data[:image].text.gsub(' ','%20s')).to_s
+ ScraperWiki.save_sqlite([:id, :term], data)
 end
 
 term = {
