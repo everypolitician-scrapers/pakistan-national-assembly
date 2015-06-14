@@ -6,10 +6,10 @@ require 'nokogiri'
 require 'date'
 require 'open-uri'
 
-# require 'colorize'
-# require 'pry'
-# require 'open-uri/cached'
-# OpenURI::Cache.cache_path = '.cache'
+require 'colorize'
+require 'pry'
+require 'open-uri/cached'
+OpenURI::Cache.cache_path = '.cache'
 
 def noko_for(url)
   Nokogiri::HTML(open(url).read) 
@@ -20,7 +20,7 @@ def datefrom(date)
 end
 
 def cell(profile, th)
-  td = profile.at_xpath(".//th[contains(.,'#{th}')]/following::td") or return
+  td = profile.at_xpath(".//th[contains(.,'#{th}')]/following::td") or return ''
   td.text.strip
 end
 
@@ -41,7 +41,7 @@ def scrape_mp(page)
    patronymic_name: cell(profile, "Father"),
    address: cell(profile, "Permanent Address"),
    phone: cell(profile, "Contact Number"),
-   constituency: cell(profile, "Constituency"),
+   constituency: cell(profile, "Constituency").gsub(/(?<!\s)\(/, ' ('),
    province: cell(profile, "Province"),
    party: cell(profile, "Party"),
    start_date: datefrom(cell(profile, "Oath Taking Date")),
