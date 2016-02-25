@@ -7,9 +7,9 @@ require 'date'
 require 'open-uri'
 
 # require 'colorize'
-# require 'pry'
-# require 'open-uri/cached'
-# OpenURI::Cache.cache_path = '.cache'
+require 'pry'
+require 'open-uri/cached'
+OpenURI::Cache.cache_path = '.cache'
 
 def noko_for(url)
   Nokogiri::HTML(open(url).read) 
@@ -51,6 +51,16 @@ def scrape_mp(page)
  }
  data[:party_id] = data[:party].gsub(/\W+/,'').downcase
  data[:image] &&= URI.join(page, data[:image].text.gsub(' ','%20s')).to_s
+ if data[:name].match(/^Mr[ \.] ?/)
+   data[:name].sub!(/^Mr[ \.] ?/,'')
+   data[:gender] = "male"
+ elsif data[:name].match(/^Mr?s[ \.] ?/)
+   data[:name].sub!(/^Mr?s[ \.] ?/,'')
+   data[:gender] = "female"
+ elsif data[:name].match(/^Miss /)
+   data[:name].sub!(/^Miss /,'')
+   data[:gender] = "female"
+ end
  ScraperWiki.save_sqlite([:id, :term], data)
 end
 
