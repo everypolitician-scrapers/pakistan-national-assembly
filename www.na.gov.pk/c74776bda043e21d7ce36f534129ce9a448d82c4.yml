@@ -1,0 +1,35 @@
+---
+request:
+  method: get
+  uri: http://www.na.gov.pk/en/profile.php?uid=875
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - '*/*'
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Date:
+    - Thu, 13 Oct 2016 17:28:20 GMT
+    Content-Type:
+    - text/html; charset=UTF-8
+    X-Cache:
+    - MISS from CIS_RProxy2
+    Via:
+    - 1.0 CIS_RProxy2 (squid/3.0.STABLE25)
+    Connection:
+    - close
+    Content-Length:
+    - '48053'
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Thu, 13 Oct 2016 17:12:53 GMT
