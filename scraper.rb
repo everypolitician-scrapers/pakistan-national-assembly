@@ -12,7 +12,7 @@ require 'open-uri/cached'
 OpenURI::Cache.cache_path = '.cache'
 
 def noko_for(url)
-  Nokogiri::HTML(open(url).read) 
+  Nokogiri::HTML(open(url).read)
 end
 
 def datefrom(date)
@@ -35,12 +35,12 @@ def scrape_mp(page)
  noko = noko_for(page)
  profile = noko.css('table.profile_tbl')
 
- data = { 
+ data = {
    id: page.to_s[/uid=(\d+)/, 1],
    name: cell(profile, "Name"),
    patronymic_name: cell(profile, "Father"),
    address: cell(profile, "Permanent Address"),
-   phone: cell(profile, "Contact Number"),
+   phone: cell(profile, "Contact Number").gsub(',', ';'),
    constituency: cell(profile, "Constituency").gsub(/(?<!\s)\(/, ' ('),
    province: cell(profile, "Province"),
    party: cell(profile, "Party"),
@@ -73,4 +73,3 @@ term = {
 ScraperWiki.save_sqlite([:id], term, 'terms')
 
 scrape_list('http://www.na.gov.pk/en/all_members.php')
-
