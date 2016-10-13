@@ -40,7 +40,7 @@ def scrape_mp(page)
    name: cell(profile, "Name"),
    patronymic_name: cell(profile, "Father"),
    address: cell(profile, "Permanent Address"),
-   phone: cell(profile, "Contact Number"),
+   phone: cell(profile, "Contact Number").gsub(',', ';'),
    constituency: cell(profile, "Constituency").gsub(/(?<!\s)\(/, ' ('),
    province: cell(profile, "Province"),
    party: cell(profile, "Party"),
