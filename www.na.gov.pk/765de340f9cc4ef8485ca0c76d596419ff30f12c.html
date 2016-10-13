@@ -1,0 +1,1352 @@
+	
+	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>National Assembly of Pakistan</title>
+<meta name="description" content="National Assembly of Pakistan" />
+<meta name="keywords" content="National Assembly" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/style_dropdown.css"/>    
+<script type="text/javascript" src="css/jquery.js" language="javascript"></script>
+<script type="text/javascript" src="js/jquery.dropdownPlain.js"></script>
+<script type="text/javascript" src="css/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="css/menu.css"/>
+
+	
+    	<script type="text/ecmascript" language="javascript" src="js/jscroller-0.4.js"></script>
+	
+<script language="javascript" type="text/javascript">
+
+ $(document).ready(function(){
+ 
+  // Add Scroller Object
+  $jScroller.add("#scroller_container","#scroller","up",1,true);
+  
+ 
+
+  // Start Autoscroller
+  $jScroller.start();
+
+ });
+ </script>
+  <link rel="stylesheet" type="text/css" href="css/menu.css" />
+<style>
+.header
+{
+background:url(images/header.png);
+background-repeat:no-repeat;
+height:131px;
+}
+
+.title_left
+{
+	float:left; width:29px; height:17px; background:#E5EDEA;
+}
+.title_heading
+{
+	float:left; width:auto; background:#FFFFFF; font-size:14px; font-family:Arial; font-weight:bold; color:#7196AC; padding-left:4px;  height:17px; padding-right:4px; text-transform:uppercase;
+}
+.title_right
+{
+	float:left; height:12px; border-bottom:3px solid #E5EDEA;
+}
+
+.widgetHEADING {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+color:#7196AC;
+text-transform:uppercase;
+padding-bottom:2px;
+vertical-align:bottom;
+}
+
+a:hover {text-decoration:underline;}
+
+</style>
+
+ <style>
+ 
+a:hover {text-decoration:underline;}
+#scroller_container {
+padding:0 0 5px 0;
+position: relative;
+width: 282px;
+margin-top:5px;
+height:170px;
+}
+
+#scroller p {
+ padding: 0;
+ 
+}
+div.jMyCarousel .prev{
+	background: url('images/left.png') center center no-repeat;
+	width:47px;
+	height:100px;
+	border:0px;
+}
+div.jMyCarousel .next{
+	background: url('images/right.png') center center no-repeat;
+	width:40px;
+	height:100px;
+	border:0px;
+}
+
+
+
+/** carousel 1 **/
+div.jMyCarousel ul li{
+	border:1px solid #fff;
+	line-height:0px;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+div.jMyCarousel ul li a{ /* in case of link */
+	display:block;
+	border:0px;
+}
+
+div.jMyCarousel ul li a img{
+	display:block;
+	border:0px;
+}
+
+-->
+</style>
+	
+<script language="javascript" type="text/javascript">
+$.simplePrint = function(selector)
+{
+    // Crea un nuevo elemento iframe
+    printArea = document.createElement('iframe');
+    
+    // Applies styles to hide the item set
+    $(printArea).attr({style: 'border:0;position:absolute;width:0px;height:0px;left:0px;top:0px;'});
+    
+    // Add the element to document
+    document.body.appendChild(printArea);
+    
+    // Applies the content
+    printArea.doc = printArea.contentWindow.document;
+    
+    // Starts the document, writes data and closes
+    printArea.doc.open();
+    printArea.doc.write($(selector).html());
+    printArea.doc.close();
+    
+    // Focuses on the item and print launches
+    printArea.contentWindow.focus();
+    printArea.contentWindow.print();
+    
+    // Return
+    return false;
+    
+    // Remove the element to document
+    document.body.removeChild(printArea);
+}
+</script>
+
+<link href="facebox/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="facebox/facebox.js" type="text/javascript"></script> 
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $('a[rel*=mybox]').facebox()
+}) 
+
+</script>
+
+<!--[if lte IE 7]>
+<style>
+ul.dropdown ul ul {
+	left : 100%;
+	top : 0;
+	color:#000;
+	margin-left:-20px;
+}
+</style>
+<![endif]-->
+<!--[if lte IE 7]>
+<style>
+ul.dropdown ul ul {
+	left : 100%;
+	top : 0;
+	color:#000;
+	margin-left:-20px;
+}
+</style>
+<![endif]--><link href="facebox/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="facebox/facebox.js" type="text/javascript"></script> 
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $('a[rel*=facebox]').facebox()
+}) 
+
+</script>
+<link rel="stylesheet" type="text/css" href="css/myTabz-vertical.css"/>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+$('#tabs div').hide(); // Hide all divs
+$('#tabs div:first').show(); // Show the first div
+$('#tabs ul li:first').addClass('active'); // Set the class of the first link to active
+$('#tabs ul li a').click(function(){ //When any link is clicked
+$('#tabs ul li').removeClass('active'); // Remove active class from all links
+$(this).parent().addClass('active'); //Set clicked link class to active
+var currentTab = $(this).attr('href'); // Set variable currentTab to value of href attribute of clicked link
+$('#tabs div').hide(); // Hide all divs
+$(currentTab).show(); // Show div with id equal to variable currentTab
+return false;
+});
+});
+
+function printPage(id)
+{
+   var html="<html>";
+   html+= document.getElementById(id).innerHTML;
+   html+="</html>";
+
+   var printWin = window.open('','','left=0,top=0,width=400,height=300,toolbar=0,scrollbars=0,status  =0');
+   printWin.document.write(html);
+   printWin.document.close();
+   printWin.focus();
+   printWin.print();
+   printWin.close();
+}
+
+
+</script>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+	<table align="center" width="934" cellspacing="0" cellpadding="0">
+<tr style="border:none;">
+			<td align="right">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+   		
+		<td width="250" align="left">
+		<!--<a href="../ur/index.php" class="top-links" style="font-size:14px;">اردو</a>-->
+				<div style="font-size:11px;">Last Updated On: 13th October 2016, 06:49 PM</div>
+		</td>
+		
+		
+		<!--
+		
+				<td width="100" align="left">
+	  <a href="https://twitter.com/NAofPakistan"><img src="images/twitter-logo.png" style="border:0;" width="20px;" height="20px;"  title="National Assembly of Pakistan Twitter Page" alt="National Assembly of Pakistan Twitter Page"></a>
+					&nbsp;<a href="https://www.facebook.com/NationalAssemblyOfPakistan"><img src="images/fb-logo.png" style="border:0;" width="20px;" height="20px;" title="National Assembly of Pakistan Facebook Page" alt="National Assembly of Pakistan Facebook Page"></a>
+					&nbsp;<a href="https://instagram.com/naofpakistan/"><img src="images/instagram-logo.png" style="border:0;" width="20px;" height="20px;" title="National Assembly of Pakistan Instagram Page" alt="National Assembly of Pakistan Instagram Page"></a>
+				
+		</td>
+		-->
+		
+		
+    	<td width="466" align="right">
+			<table width="460" height="25" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+				<tbody>
+				<tr>
+				  <td height="25" width="460" valign="middle" align="right">
+				  <a href="index.php" class="top-links">Home</a> | 
+				  <a href="contact_us.php" class="top-links">Feedback</a> | 
+				  <a href="content.php?id=51" class="top-links">Advertisments</a> | 
+				  <a href="/en/content.php?id=118" class="top-links">Careers</a> | 
+				  <a href="downloads.php" class="top-links">Downloads</a> | 
+				  <a href="content.php?id=53" class="top-links">Useful Links</a> | 
+				  <a href="faq.php" class="top-links">FAQs</a> | 
+				  <a href="content.php?id=54" class="top-links">Contact Us</a>&nbsp;
+			</td>
+				</tr>
+				</tbody>
+			  </table>	
+	</td>
+		  </tr>
+</table>
+
+			</td>
+		  </tr>
+	<tr><td>
+	
+		<table align="center" width="100%" style="border:2px solid #e8e8e8;" cellspacing="0" cellpadding="0">
+		  
+		  <tr>
+			<script language="javascript" type="text/javascript">
+function validate(f)
+	{
+		if(f.searchall.value.toString() == "" )
+			{
+				//window.alert("Please enter some text for searching!");
+				f.searchall.focus();
+				return false;
+			}
+
+		else
+			return true;
+	}
+</script>
+
+<style>
+.header
+{
+background:url(images/header.png);
+background-repeat:no-repeat;
+height:131px;
+}
+</style>
+
+<td align="right" class="header" valign="top">
+
+	<form action="search_content.php" method="post" >
+	<table width="150px" border="0" cellspacing="3" cellpadding="0" style="margin-top:5px; margin-right:5px;">
+		<tr>
+			<td valign="top" align="left" width="140px">
+				<input type="text" name="query" id="query" size="19" style="color:#666666; " value="Search"  onFocus="if(this.value=='Search'){this.value='';}" onBlur="if(this.value==''){this.value='Search';}" action="include/js_suggest/suggest.php" columns="2" autocomplete="off" delay="1500">
+			</td>
+			<td valign="middle" align="left" width="10px">
+			<!--<input type="hidden" name="id" value="" />-->
+				<input type="hidden" name="hid_srch" value="" />
+				<input type="image" src="images/search-btn.png" align="top" id="submit" name="submit" />
+				<input type="hidden" name="search" value="1">
+			</td>
+		</tr>
+	</table>
+	</form>
+
+
+</td>		  </tr>
+		  <tr>
+			<td align="center" valign="middle" class="menu">
+			<div id="menu" >
+<ul class="menu" >
+			<li  style=" margin-left:0px;vertical-align:bottom;" >
+             <a href="#" style="font-weight:bold;">About the National Assembly</a>
+			<ul style="text-align:left; width:210px;">        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="#">
+                     <div style="width:165px; float:left">Introduction</div>
+                     <div style="width:10px; float:right"> <strong >»</strong></div>                     </a>
+					 <ul style=" width:280px;">        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=1" >National Assembly</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="/en/composition.php" >Composition</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=3" >President</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=7" >P.M. / Leader of the House</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=8" >Leader of Opposition</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=10" >Member's Qualification</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=11" >Tenure</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=12" >Observance of Rules</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=13" >Functions</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=14" >Question of Privilege</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=16" >Calling Attention Notice</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=17" >Adjournment Motions</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=18" >Sessions</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="/en/intro_relation.php" >Friendship Groups</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=21" >Secretariat <strong>»</strong></a>
+					 
+			<ul style="padding-left:80px;" >        		
+        		 <li  ><a href="content.php?id=76">Officer's Phone Numbers</a></li>
+        			 
+        		</ul> 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=22" >Office (Secretary)</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=15" >Questions</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		</ul> 
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="speaker.php">
+                     <div style="width:165px; float:left">Speaker</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="deputyspeaker.php">
+                     <div style="width:165px; float:left">Deputy Speaker</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="content.php?id=60">
+                     <div style="width:165px; float:left">Research Wing</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="ojt.php">
+                     <div style="width:165px; float:left">On Job Training</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="/en/content.php?id=165">
+                     <div style="width:165px; float:left">Pensioners Facilitation</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		</ul> 
+        		
+        	</li>
+						<li  style=" margin-left:0px;vertical-align:bottom;" >
+             <a href="#" style="font-weight:bold;">History</a>
+			<ul style="text-align:left; width:210px;">        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="content.php?id=75">
+                     <div style="width:165px; float:left">Parliamentary History</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="governers.php">
+                     <div style="width:165px; float:left">Governor Generals</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="presidents.php">
+                     <div style="width:165px; float:left">Presidents</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="primeministers.php">
+                     <div style="width:165px; float:left">Prime Ministers</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="speakers.php">
+                     <div style="width:165px; float:left">Speakers / Presidents</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="deputyspeakers.php">
+                     <div style="width:165px; float:left">Deputy Speakers / Presidents</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="psecretaries.php">
+                     <div style="width:165px; float:left">Secretaries</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="opposition-leaders.php">
+                     <div style="width:165px; float:left">Leaders of Opposition</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="content.php?id=121">
+                     <div style="width:165px; float:left">Former Members </div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="content.php?id=25">
+                     <div style="width:165px; float:left">Parliament Buildings</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		</ul> 
+        		
+        	</li>
+						<li  style=" margin-left:0px;vertical-align:bottom;" >
+             <a href="#" style="font-weight:bold;">Legislative Business</a>
+			<ul style="text-align:left; width:210px;">        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="ordersoftheday.php">
+                     <div style="width:165px; float:left">Orders of the Day</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="bills.php?status=majlis">
+                     <div style="width:165px; float:left">Bills Passed by Majlis-e-Shoora (Parliament)</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="acts-tenure.php">
+                     <div style="width:165px; float:left">Acts of Parliament</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="bills.php?status=pass">
+                     <div style="width:165px; float:left">Bills Passed By NA</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="bills.php?type=1">
+                     <div style="width:165px; float:left">Govt. Bills Introduced</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="bills.php?type=2">
+                     <div style="width:165px; float:left">Private Members' Bills Introduced</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="bills.php?type=3">
+                     <div style="width:165px; float:left">Laws Passed By Other Houses</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="bills.php?type=4">
+                     <div style="width:165px; float:left">Ordinance Laid</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="debates.php">
+                     <div style="width:165px; float:left">NA Debates</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="http://www.na.gov.pk/uploads/documents/Ruling-Web.pdf">
+                     <div style="width:165px; float:left">Rulings of the Chair (1947-1997)</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="search.php">
+                     <div style="width:165px; float:left">Search</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		</ul> 
+        		
+        	</li>
+						<li  style=" margin-left:0px;vertical-align:bottom;" >
+             <a href="#" style="font-weight:bold;">Members</a>
+			<ul style="text-align:left; width:210px;">        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="all_members.php">
+                     <div style="width:165px; float:left">Complete M.N.A List</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="#">
+                     <div style="width:165px; float:left">Party Wise List</div>
+                     <div style="width:10px; float:right"> <strong >»</strong></div>                     </a>
+					 <ul style=" width:280px;"><li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=101" >Pakistan Muslim League (N) (PML(N))</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=102" >Pakistan Peoples Party Parliamentarians (PPPP)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=103" >Pakistan Tehreek-e-Insaf (PTI)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=104" >Muttahidda Qaumi Movement (MQM)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=105" >Jamiat Ulama-e-Islam (F) (JUI-F)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=106" >Pakistan Muslim League (F) (PML-F)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=107" >Jamaat-E-Islami (JI)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=108" >Pukhtoonkhwa Milli Awami Party (PMAP)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=109" >National Peoples Party (NPP)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=110" >Pakistan Muslim League (PML)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=111" >Awami National Party (ANP)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=112" >Balochistan National Party (BNP)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=113" >Qaumi Watan Party (Sherpao) (QWP-S)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=114" >Pakistan Muslim League (Z) (PML-Z)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=115" >National Party (NP)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=116" >Awami Muslim League  (AML)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=117" >Awami Jamhuri Ittehad Pakistan (AJIP)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=118" >All Pakistan Muslim League (APML)</a>
+				<li style="width:280px;  border-bottom:1px dashed #ccc;">						 <a href="members_listing.php?party=119" >Independent (IND)</a>
+				</ul> 
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="#">
+                     <div style="width:165px; float:left">Province Wise List</div>
+                     <div style="width:10px; float:right"> <strong >»</strong></div>                     </a>
+					 <ul style=" width:280px;">        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="mna_list.php?list=khyber" >Khyber Pakhtunkhwa</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="mna_list.php?list=fata" >Fata</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="mna_list.php?list=punjab" >Punjab</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="mna_list.php?list=sindh" >Sindh</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:280px; border-bottom:1px dashed #ccc;">                    
+                <a href="mna_list.php?list=balochistan" >Balochistan</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		</ul> 
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="mna_list_w2.php?list=women">
+                     <div style="width:165px; float:left">Women</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="mna_list.php?list=minority">
+                     <div style="width:165px; float:left">Non-Muslims</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="party-stats.php">
+                     <div style="width:165px; float:left">Party-Wise Graph</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="attendance2.php">
+                     <div style="width:165px; float:left">Attendance of Members</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		</ul> 
+        		
+        	</li>
+						<li  style=" margin-left:0px;vertical-align:bottom;" >
+             <a href="#" style="font-weight:bold;">Committees</a>
+			<ul style="text-align:left; width:210px;">					
+                       <li style="text-align:left; border-bottom:1px dashed #ccc; " > 
+                       <a href="cmen.php?type=1">
+                       <div style="width:165px; float:left">Standing Committees</div>
+                       </a>
+                       </li>
+                    
+                    
+									
+                       <li style="text-align:left; border-bottom:1px dashed #ccc; " > 
+                       <a href="cmen.php?type=2">
+                       <div style="width:165px; float:left">Special Committees</div>
+                       </a>
+                       </li>
+                    
+                    
+									
+                       <li style="text-align:left; border-bottom:1px dashed #ccc; " > 
+                       <a href="cmen.php?type=3">
+                       <div style="width:165px; float:left">Select Committee</div>
+                       </a>
+                       </li>
+                    
+                    
+									
+                       <li style="text-align:left; border-bottom:1px dashed #ccc; " > 
+                       <a href="cmen.php?type=5">
+                       <div style="width:165px; float:left">Parliamentary Committees</div>
+                       </a>
+                       </li>
+                    
+                    
+									
+                       <li style="text-align:left; border-bottom:1px dashed #ccc; " > 
+                       <a href="cmen.php?type=6">
+                       <div style="width:165px; float:left">Non-Ministerial Standing Committees</div>
+                       </a>
+                       </li>
+                    
+                    
+				        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="content.php?id=63">
+                     <div style="width:165px; float:left">Committee System</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="notices.php">
+                     <div style="width:165px; float:left">Meeting Notice</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="committee-reports.php">
+                     <div style="width:165px; float:left">Committee Reports</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		</ul> 
+        		
+        	</li>
+						<li  style=" margin-left:0px;vertical-align:bottom;" >
+             <a href="#" style="font-weight:bold;">Federal Cabinet</a>
+			<ul style="text-align:left; width:210px;">        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="fmins_list.php">
+                     <div style="width:165px; float:left">Federal Ministers</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="smins_list.php">
+                     <div style="width:165px; float:left">Ministers of State</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="advisors_lists.php">
+                     <div style="width:165px; float:left">Advisors</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="assistants_list.php">
+                     <div style="width:165px; float:left">Special Assistants</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="sectories_lists.php">
+                     <div style="width:165px; float:left">Parliamentary Secretaries</div>
+                     <div style="width:10px; float:right"></div>                     </a>
+					  
+					 
+					 </li>
+        			 
+        		</ul> 
+        		
+        	</li>
+						<li >
+             <a href="#" style="font-weight:bold;">Media Center</a>
+			<ul style="text-align:left; width:210px;">        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="notfound.php">
+                     <div style="width:165px; float:left">Events</div>
+                     <div style="width:10px; float:right"> <strong >»</strong></div>                     </a>
+					 <ul style=" width:200px; margin:-27px 0 0 -195px !important">        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="http://www.na.gov.pk/en/content.php?id=127" >PAECO Conference 2013</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="http://www.na.gov.pk/en/content.php?id=125" >6th SAARC Speakers and Parliamentarians Conference</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		</ul> 
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="notfound.php">
+                     <div style="width:165px; float:left">Chinese President Visit</div>
+                     <div style="width:10px; float:right"> <strong >»</strong></div>                     </a>
+					 <ul style=" width:200px; margin:-27px 0 0 -195px !important">        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="gallery_pictures.php?id=12" >Photo Gallery of Chinese President Visit</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="content.php?id=156" >Videos of Chinese President Visit</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		</ul> 
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="#">
+                     <div style="width:165px; float:left">Press Release</div>
+                     <div style="width:10px; float:right"> <strong >»</strong></div>                     </a>
+					 <ul style=" width:200px; margin:-27px 0 0 -195px !important">        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="pressrelease.php?content=101" >Speaker</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="pressrelease.php?content=102" >Deputy Speaker</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="pressrelease.php?content=103" >Committees</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="pressrelease.php?content=104" >Sub-Committees</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="pressrelease.php?content=106" >Kashmir Committee</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="pressrelease.php?content=105" >Secretariat</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		</ul> 
+					 
+					 </li>
+        			 
+        		        		
+             <li style="text-align:left; border-bottom:1px dashed #ccc; " >
+                      <a href="gallery.php">
+                     <div style="width:165px; float:left">Multimedia Gallery</div>
+                     <div style="width:10px; float:right"> <strong >»</strong></div>                     </a>
+					 <ul style=" width:200px; margin:-27px 0 0 -195px !important">        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="/en/gallery_pictures.php?id=3" >Speaker</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="/en/gallery_pictures.php?id=4" >Deputy Speaker</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="/en/gallery_pictures.php?id=5" >Occupied Kashmir</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="/en/gallery_pictures.php?id=8" >6th SAARC Speakers and Parliamentarians Conference</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="http://www.na.gov.pk/en/gallery_pictures.php?id=9" >PAECO Conference 2013</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		        		
+        			<li style="width:200px; border-bottom:1px dashed #ccc;">                    
+                <a href="/en/gallery_pictures.php?id=13" >Meeting of the 34th PUIC</a>
+					 
+			 
+			
+					 </li>
+        			 
+        		</ul> 
+					 
+					 </li>
+        			 
+        		</ul> 
+        		
+        	</li>
+			</ul>
+</div>			</td>
+		  </tr>
+		  <tr>
+			<td bgcolor="#FFFFFF" style="padding:10px 23px;">
+			
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				  <tr>
+					<td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					                        <tr>
+					    <td colspan="2"><div  class="my_marq">
+                        <MARQUEE  
+direction="left" loop="20" scrollamount="3" width="99%">The National Assembly Session has been prorogued on Friday, the 7th October, 2016 | The Majlis-e-Shoora (Parliament) has been prorogued on Friday, the 7th October, 2016 Committee Meetings:11:00 AM: Rules of Procedure and Privileges at Committee Room No.2 | 02:00 PM: Meeting of the Sub-Committee-II of PAC (Cancelled) at Committee Room No.2 | </MARQUEE></div></td>
+					    </tr>
+                                                  
+                         <tr>
+					  <tr>
+					    <td width="30%" align="left">
+                         
+                        </td>
+					    <td width="70%" align="right"><script type="text/javascript">
+ <!--
+  var stile = "top=10, left=10, width=850, status=no, menubar=no, toolbar=no, scrollbars=yes";
+     function Popup(apri) {
+        window.open(apri, "", stile);
+     }
+ //-->
+</script>
+    <span class="ach_links">
+   
+   
+    
+<a style="text-decoration:none" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4bf3f19c335a2da0"><img src="images/share_small.png" align="absbottom"  border="0"/> Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4bf3f19c335a2da0"></script>
+  
+ <a style="text-decoration:none;"  href="javascript:Popup('print.php?profile.php&amp;uid=758')"><img src="images/print.png" align="absbottom"   border="0"/> Print</a>
+
+ <!--<a style="text-decoration:none" href="createpdf.php?" target="_new">
+<img src="images/pdf_small.png" align="absbottom"   border="0"/> PDF</a>-->
+</span> 						
+						<!--
+						<input type="button" value="Print" onclick="printPage('p_cont');"></input>
+						-->
+						
+						
+						</td>
+					    </tr>
+					  <tr>
+					    <td colspan="2" valign="top" align="left">
+                        <div id="page_content_div" style="padding-top:10px; text-align:justify">
+							<a href="javascript: history.go(-1)"><img width="20px" height="20px" src="/uploads/back-button.png" alt="Back Button"></a>
+						<h1 style="font-size:medium; float:left;width:99%; margin-bottom:10px;"> Personal Profile </h1>    
+						
+						<div id="pagecontent" style="float:left; width:99%;">
+                        
+                       
+  
+                        
+                        
+                        
+      <div id="profile">                    
+                <div class="p_cont" >         
+  			  			 
+ 			 <table cellpadding="0" cellspacing="0" border="0" class="profile_tbl" width="100%" >
+          <tr>
+            <th width="20%"> Name  </th>
+            <td width="64%">  Sheikh Muhammad Akram </td>
+             
+            <td width="16%" rowspan="23">
+			
+              <img src="../uploads/images/89.jpg" width="200"  /> 
+			  
+
+              </td>
+                         </tr>
+            
+							 <tr>
+								<th>Father's Name  </th>
+								<td>Sheikh Muhammad Nawaz  </td>
+							 </tr>
+                  
+         
+         		  
+         <tr>
+            <th>CNIC   </th>
+            <td> 33202-6261088-5    </td>
+            </tr>
+        
+                     <tr>
+             <th>Permanent Address    </th>
+            <td>Opp. SSP House Civil Lines Jhang   </td>
+            </tr>
+
+                      <tr>
+             <th>Local Address    </th>
+            <td>A-310, Parliament Lodges, Islamabad   </td>
+            </tr>
+                       <tr>
+             <th>Contact Number </th>
+            <td>0321-6500111   </td>
+            </tr>
+                      <tr>
+             <th>Email  </th>
+            <td>
+
+			akram.na89@na.gov.pk   
+			</td>
+            </tr>
+   		  
+          <!--   <tr>
+            <th>Religion  </th>
+            <td>    </td>
+          </tr> -->  
+           		   
+		 <!-- Reserved seats Minorities don't have province -->  
+		                <tr>
+              <th>Province  </th>
+              <td>Punjab   </td>
+            </tr>
+					
+            
+		<!-- Reserved seats for Women and Minorities don't have constituency -->
+                 <tr>
+            <th>Constituency    </th>
+            <td>NA-89(JHANG-I (Old NA-89 Jhang-IV))   </td>
+            </tr>
+             
+            
+          
+          <tr>
+            <th>Party     </th>
+            <td> PML(N)   </td>
+          </tr>
+            
+          <tr>
+            <th>Oath Taking Date   </th>
+			 
+			 <td> 01-06-2013 </td>
+            
+          </tr>  
+                  </table>
+		 
+          
+        			   
+		   			 
+			  			 
+			 
+           </div></div>
+                        </td>
+					    </tr>
+					  <tr>
+					    <td colspan="2">&nbsp;</td>
+					    </tr>
+					   					  </table></td>
+					<!--<td class="spacer" style="display:none">&nbsp;</td>
+				    <td class="rightpanel" valign="top" style="display:none">
+						<table width="100%" border="0">
+						  <tr>
+							
+													
+						  </tr>		  
+					  </table>
+					</td>-->
+				  </tr>
+				</table>
+			
+			</td>
+		  </tr>
+	  </table>
+	</td></tr>
+	</table>
+	</div></div></td>
+  </tr>
+  
+	<tr>
+		<td align="center" colspan="2">
+    		<style>
+	#footer a{ color:#000000; text-decoration:none;}
+	#footer a:hover{text-decoration:underline;}
+</style>
+            <div id="footer" style="width: 88%; float:left;  height: 50px; text-align: center; padding-top: 10px;">
+  <a href="content.php?id=45">Glossary</a> | <a href="sitemap.php">Site Map</a> |  <a href="content.php?id=47">Terms of Use</a> | <a href="content.php?id=49">Disclaimer</a> | <a href="content.php?id=48">Privacy Policy</a> <br>
+				Copyright &copy; 2011-2016. All Rights are Reserved. National Assembly of Pakistan. <br/>
+				    <a href="https://twitter.com/NAofPakistan"><img src="images/twitter-logo.png" style="border:0;" width="20px;" height="20px;"  title="National Assembly of Pakistan Twitter Page" alt="National Assembly of Pakistan Twitter Page"></a>
+					&nbsp;<a href="https://www.facebook.com/NationalAssemblyOfPakistan"><img src="images/fb-logo.png" style="border:0;" width="20px;" height="20px;" title="National Assembly of Pakistan Facebook Page" alt="National Assembly of Pakistan Facebook Page"></a>
+					&nbsp;<a href="https://instagram.com/naofpakistan/"><img src="images/instagram-logo.png" style="border:0;" width="20px;" height="20px;" title="National Assembly of Pakistan Instagram Page" alt="National Assembly of Pakistan Instagram Page"></a>
+				
+				
+			</div>
+			<br/>
+			
+			<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1268237-14']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+		      		</td>
+  </tr>
+</table>
+
+</body>
+</html>
