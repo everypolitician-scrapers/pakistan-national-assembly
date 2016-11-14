@@ -12,6 +12,12 @@ require 'pry'
 # OpenURI::Cache.cache_path = '.cache'
 require 'scraped_page_archive/open-uri'
 
+class String
+  def tidy
+    self.gsub(/[[:space:]]+/, ' ').strip
+  end
+end
+
 def noko_for(url)
   Nokogiri::HTML(open(url).read)
 end
@@ -22,7 +28,7 @@ end
 
 def cell(profile, th)
   td = profile.at_xpath(".//th[contains(.,'#{th}')]/following::td") or return ''
-  td.text.strip
+  td.text.tidy
 end
 
 def scrape_list(page)
