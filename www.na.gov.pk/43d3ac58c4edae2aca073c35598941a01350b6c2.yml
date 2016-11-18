@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Thu, 17 Nov 2016 19:30:09 GMT
+    - Fri, 18 Nov 2016 08:23:38 GMT
     Content-Type:
     - text/html; charset=UTF-8
     X-Cache:
@@ -28,8 +28,8 @@ response:
     Connection:
     - close
     Content-Length:
-    - '47656'
+    - '47511'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Thu, 17 Nov 2016 19:13:55 GMT
+recorded_at: Fri, 18 Nov 2016 08:07:23 GMT
