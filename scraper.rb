@@ -71,12 +71,4 @@ def scrape_mp(page)
  ScraperWiki.save_sqlite([:id, :term], data)
 end
 
-term = {
-  id: 14,
-  name: '14th National Assembly',
-  start_date: '2013-06-01',
-  source: 'https://en.wikipedia.org/w/index.php?title=National_Assembly_of_Pakistan&oldid=663314574',
-}
-ScraperWiki.save_sqlite([:id], term, 'terms')
-
 scrape_list('http://www.na.gov.pk/en/all_members.php')
