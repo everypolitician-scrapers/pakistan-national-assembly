@@ -1,5 +1,6 @@
 #!/bin/env ruby
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'date'
 require 'pry'
@@ -26,41 +27,41 @@ end
 def scrape_list(page)
   noko = noko_for(page)
   noko.css('table.mytable12 a[href*="profile.php"]/@href').map(&:text).uniq.each do |url|
-    scrape_mp(URI.join page, url)
+    scrape_mp(URI.join(page, url))
   end
 end
 
 def scrape_mp(page)
- noko = noko_for(page)
- profile = noko.css('table.profile_tbl')
+  noko = noko_for(page)
+  profile = noko.css('table.profile_tbl')
 
- data = {
-   id: page.to_s[/uid=(\d+)/, 1],
-   name: cell(profile, "Name"),
-   patronymic_name: cell(profile, "Father"),
-   address: cell(profile, "Permanent Address"),
-   phone: cell(profile, "Contact Number").gsub(',', ';'),
-   constituency: cell(profile, "Constituency").gsub(/(?<!\s)\(/, ' ('),
-   province: cell(profile, "Province"),
-   party: cell(profile, "Party"),
-   start_date: datefrom(cell(profile, "Oath Taking Date")),
-   image: profile.css('img/@src'),
-   term: 14,
-   source: page.to_s,
- }
- data[:party_id] = data[:party].gsub(/\W+/,'').downcase
- data[:image] &&= URI.join(page, data[:image].text.gsub(' ','%20s')).to_s
- if data[:name].match(/^Mr[ \.] ?/)
-   data[:name].sub!(/^Mr[ \.] ?/,'')
-   data[:gender] = "male"
- elsif data[:name].match(/^Mr?s[ \.] ?/)
-   data[:name].sub!(/^Mr?s[ \.] ?/,'')
-   data[:gender] = "female"
- elsif data[:name].match(/^Miss /)
-   data[:name].sub!(/^Miss /,'')
-   data[:gender] = "female"
- end
- ScraperWiki.save_sqlite([:id, :term], data)
+  data = {
+    id:              page.to_s[/uid=(\d+)/, 1],
+    name:            cell(profile, 'Name'),
+    patronymic_name: cell(profile, 'Father'),
+    address:         cell(profile, 'Permanent Address'),
+    phone:           cell(profile, 'Contact Number').tr(',', ';'),
+    constituency:    cell(profile, 'Constituency').gsub(/(?<!\s)\(/, ' ('),
+    province:        cell(profile, 'Province'),
+    party:           cell(profile, 'Party'),
+    start_date:      datefrom(cell(profile, 'Oath Taking Date')),
+    image:           profile.css('img/@src'),
+    term:            14,
+    source:          page.to_s,
+  }
+  data[:party_id] = data[:party].gsub(/\W+/, '').downcase
+  data[:image] &&= URI.join(page, data[:image].text.gsub(' ', '%20s')).to_s
+  if data[:name] =~ /^Mr[ \.] ?/
+    data[:name].sub!(/^Mr[ \.] ?/, '')
+    data[:gender] = 'male'
+  elsif data[:name] =~ /^Mr?s[ \.] ?/
+    data[:name].sub!(/^Mr?s[ \.] ?/, '')
+    data[:gender] = 'female'
+  elsif data[:name] =~ /^Miss /
+    data[:name].sub!(/^Miss /, '')
+    data[:gender] = 'female'
+  end
+  ScraperWiki.save_sqlite(%i(id term), data)
 end
 
 ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
