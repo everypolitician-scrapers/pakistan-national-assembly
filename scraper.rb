@@ -63,4 +63,5 @@ def scrape_mp(page)
  ScraperWiki.save_sqlite([:id, :term], data)
 end
 
+ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
 scrape_list('http://www.na.gov.pk/en/all_members.php')
