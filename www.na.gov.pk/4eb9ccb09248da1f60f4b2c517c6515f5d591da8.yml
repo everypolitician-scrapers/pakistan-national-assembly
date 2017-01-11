@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Tue, 10 Jan 2017 06:02:00 GMT
+    - Wed, 11 Jan 2017 05:57:41 GMT
     Content-Type:
     - text/html; charset=UTF-8
     X-Cache:
@@ -28,8 +28,8 @@ response:
     Connection:
     - close
     Content-Length:
-    - '48478'
+    - '48457'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Tue, 10 Jan 2017 05:45:22 GMT
+recorded_at: Wed, 11 Jan 2017 05:41:03 GMT
