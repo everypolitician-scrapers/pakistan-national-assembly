@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Thu, 02 Feb 2017 18:45:19 GMT
+    - Fri, 03 Feb 2017 01:39:06 GMT
     Server:
     - Apache
     X-Powered-By:
@@ -32,8 +32,8 @@ response:
     Connection:
     - close
     Content-Length:
-    - '48239'
+    - '47865'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Thu, 02 Feb 2017 18:46:09 GMT
+recorded_at: Fri, 03 Feb 2017 01:39:55 GMT
