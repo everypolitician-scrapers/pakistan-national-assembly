@@ -18,7 +18,11 @@ response:
     message: OK
   headers:
     Date:
-    - Sun, 12 Feb 2017 15:24:07 GMT
+    - Tue, 14 Feb 2017 09:48:39 GMT
+    Server:
+    - Apache
+    X-Powered-By:
+    - PHP/5.6.2
     Content-Type:
     - text/html; charset=UTF-8
     X-Cache:
@@ -28,8 +32,8 @@ response:
     Connection:
     - close
     Content-Length:
-    - '47596'
+    - '48078'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Sun, 12 Feb 2017 15:24:48 GMT
+recorded_at: Tue, 14 Feb 2017 09:49:21 GMT
