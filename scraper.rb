@@ -61,7 +61,7 @@ def scrape_mp(page)
     data[:name].sub!(/^Miss /, '')
     data[:gender] = 'female'
   end
-  ScraperWiki.save_sqlite(%i(id term), data)
+  ScraperWiki.save_sqlite(%i[id term], data)
 end
 
 ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
