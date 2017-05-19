@@ -18,7 +18,9 @@ response:
     message: OK
   headers:
     Date:
-    - Thu, 18 May 2017 13:47:00 GMT
+    - Fri, 19 May 2017 13:32:59 GMT
+    Content-Length:
+    - '44'
     Content-Type:
     - text/html; charset=UTF-8
     X-Cache:
@@ -26,8 +28,8 @@ response:
     Via:
     - 1.0 CIS_RProxy2 (squid/3.0.STABLE25)
     Connection:
-    - close
+    - Keep-Alive
   body:
-    encoding: ASCII-8BIT
+    encoding: UTF-8
   http_version: 
-recorded_at: Thu, 18 May 2017 13:47:24 GMT
+recorded_at: Fri, 19 May 2017 13:33:22 GMT
