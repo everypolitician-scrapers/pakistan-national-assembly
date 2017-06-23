@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Wed, 21 Jun 2017 14:37:42 GMT
+    - Fri, 23 Jun 2017 00:43:28 GMT
     Server:
     - Apache
     X-Powered-By:
@@ -34,4 +34,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 21 Jun 2017 14:38:03 GMT
+recorded_at: Fri, 23 Jun 2017 00:43:50 GMT
