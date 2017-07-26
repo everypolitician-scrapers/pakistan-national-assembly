@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Tue, 25 Jul 2017 23:52:58 GMT
+    - Wed, 26 Jul 2017 08:40:18 GMT
     Content-Type:
     - text/html; charset=UTF-8
     X-Cache:
@@ -30,4 +30,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Tue, 25 Jul 2017 23:53:17 GMT
+recorded_at: Wed, 26 Jul 2017 08:40:41 GMT
