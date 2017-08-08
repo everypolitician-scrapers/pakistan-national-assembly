@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Mon, 07 Aug 2017 10:25:48 GMT
+    - Tue, 08 Aug 2017 03:25:54 GMT
     Content-Type:
     - text/html; charset=UTF-8
     X-Cache:
@@ -30,4 +30,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Mon, 07 Aug 2017 10:26:30 GMT
+recorded_at: Tue, 08 Aug 2017 03:26:12 GMT
