@@ -61,6 +61,9 @@ def scrape_mp(page)
     data[:name].sub!(/^Miss /, '')
     data[:gender] = 'female'
   end
+  if data[:name] =~ /, Prime Minister of Pakistan$/
+    data[:name].sub!(/, Prime Minister of Pakistan$/, '')
+  end
   ScraperWiki.save_sqlite(%i[id term], data)
 end
 
