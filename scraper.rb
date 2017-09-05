@@ -50,7 +50,7 @@ def scrape_mp(page)
     source:          page.to_s,
   }
   data[:party_id] = data[:party].gsub(/\W+/, '').downcase
-  data[:image] &&= URI.join(page, data[:image].text.gsub(' ', '%20s')).to_s
+  data[:image] &&= URI.join(page, data[:image].text.gsub(' ', '%20')).to_s
   if data[:name] =~ /^Mr[ \.] ?/
     data[:name].sub!(/^Mr[ \.] ?/, '')
     data[:gender] = 'male'
