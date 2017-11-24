@@ -20,7 +20,7 @@ response:
     Server:
     - nginx
     Date:
-    - Thu, 23 Nov 2017 18:55:41 GMT
+    - Fri, 24 Nov 2017 22:18:34 GMT
     Content-Type:
     - text/html; charset=UTF-8
     Transfer-Encoding:
@@ -32,4 +32,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Thu, 23 Nov 2017 19:04:04 GMT
+recorded_at: Fri, 24 Nov 2017 22:26:58 GMT
