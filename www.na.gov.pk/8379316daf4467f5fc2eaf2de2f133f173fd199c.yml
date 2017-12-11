@@ -20,16 +20,16 @@ response:
     Server:
     - nginx
     Date:
-    - Sun, 10 Dec 2017 08:07:58 GMT
+    - Mon, 11 Dec 2017 21:07:47 GMT
     Content-Type:
     - text/html; charset=UTF-8
-    Transfer-Encoding:
-    - chunked
     Connection:
     - keep-alive
     X-Powered-By:
     - PHP/5.6.2
+    Content-Length:
+    - '49416'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Sun, 10 Dec 2017 08:16:41 GMT
+recorded_at: Mon, 11 Dec 2017 21:16:32 GMT
