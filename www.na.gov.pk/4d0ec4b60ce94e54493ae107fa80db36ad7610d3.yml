@@ -17,19 +17,15 @@ response:
     code: 200
     message: OK
   headers:
-    Server:
-    - nginx
     Date:
-    - Wed, 21 Mar 2018 13:29:20 GMT
+    - Thu, 22 Mar 2018 13:44:52 GMT
     Content-Type:
     - text/html; charset=UTF-8
     Connection:
     - keep-alive
-    X-Powered-By:
-    - PHP/5.6.2
     Content-Length:
-    - '50618'
+    - '50477'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 21 Mar 2018 13:41:23 GMT
+recorded_at: Thu, 22 Mar 2018 13:56:56 GMT
