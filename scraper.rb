@@ -50,6 +50,8 @@ def scrape_mp(page)
     source:          page.to_s,
   }
   data[:party_id] = data[:party].gsub(/\W+/, '').downcase
+  data[:constituency_id] = data[:constituency][/(NA-\d+)/, 1]
+
   data[:image] &&= URI.join(page, data[:image].text.gsub(' ', '%20')).to_s
   if data[:name] =~ /^Mr[ \.] ?/
     data[:name].sub!(/^Mr[ \.] ?/, '')
