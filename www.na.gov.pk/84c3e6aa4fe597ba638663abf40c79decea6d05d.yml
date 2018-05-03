@@ -20,16 +20,14 @@ response:
     Server:
     - nginx
     Date:
-    - Wed, 02 May 2018 09:25:00 GMT
+    - Thu, 03 May 2018 08:58:45 GMT
     Content-Type:
     - text/html; charset=UTF-8
-    Connection:
-    - keep-alive
     X-Powered-By:
     - PHP/5.6.2
     Content-Length:
-    - '50318'
+    - '50538'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 02 May 2018 09:37:51 GMT
+recorded_at: Thu, 03 May 2018 09:11:37 GMT
