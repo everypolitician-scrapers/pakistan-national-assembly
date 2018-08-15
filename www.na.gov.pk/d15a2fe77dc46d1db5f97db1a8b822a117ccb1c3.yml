@@ -1,0 +1,35 @@
+---
+request:
+  method: get
+  uri: http://www.na.gov.pk/en/profile.php?uid=1397
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - "*/*"
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Server:
+    - nginx
+    Date:
+    - Wed, 15 Aug 2018 09:47:44 GMT
+    Content-Type:
+    - text/html; charset=UTF-8
+    Connection:
+    - keep-alive
+    X-Powered-By:
+    - PHP/5.6.2
+    Content-Length:
+    - '49197'
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Wed, 15 Aug 2018 10:03:17 GMT
