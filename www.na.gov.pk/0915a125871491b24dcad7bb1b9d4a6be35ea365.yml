@@ -20,7 +20,7 @@ response:
     Server:
     - nginx
     Date:
-    - Thu, 03 Jan 2019 08:46:34 GMT
+    - Fri, 04 Jan 2019 17:47:33 GMT
     Content-Type:
     - text/html; charset=UTF-8
     Connection:
@@ -28,8 +28,8 @@ response:
     X-Powered-By:
     - PHP/5.6.2
     Content-Length:
-    - '52705'
+    - '52576'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Thu, 03 Jan 2019 09:07:32 GMT
+recorded_at: Fri, 04 Jan 2019 18:08:33 GMT
