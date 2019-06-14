@@ -20,7 +20,7 @@ response:
     Server:
     - nginx
     Date:
-    - Fri, 14 Jun 2019 00:26:41 GMT
+    - Fri, 14 Jun 2019 04:00:18 GMT
     Content-Type:
     - text/html; charset=UTF-8
     Transfer-Encoding:
@@ -32,4 +32,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Fri, 14 Jun 2019 00:21:20 GMT
+recorded_at: Fri, 14 Jun 2019 03:54:58 GMT
